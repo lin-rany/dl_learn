@@ -38,7 +38,7 @@ def func3():
         for X, y in data_iter(batch_size, features, labels):
             print(f"size: {len(y)}\n{X}\n{y}")
 
-# def linreg(X,w,b):
+# def 03(X,w,b):
 #     return torch.mul(X,w)+b
 def linreg(X, w, b):  #@save
     """线性回归模型"""
