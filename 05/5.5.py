@@ -14,8 +14,8 @@ def try_gpu(i=0):  # @save
 if __name__ == '__main__':
     startTime1 = time.time()
     for i in range(100):
-        A = torch.ones(500, 500)
-        B = torch.ones(500, 500)
+        A = torch.normal(0,1,(500, 500))
+        B = torch.normal(0,1,(500, 500))
         C = torch.matmul(A, B)
     endTime1 = time.time()
 
@@ -23,8 +23,8 @@ if __name__ == '__main__':
 
     startTime2 = time.time()
     for i in range(100):
-        A = torch.ones(500, 500, device=try_gpu())
-        B = torch.ones(500, 500, device=try_gpu())
+        A = torch.normal(0,1,(500, 500), device=try_gpu())
+        B = torch.normal(0,1,(500, 500), device=try_gpu())
         C = torch.matmul(A, B)
     endTime2 = time.time()
 
