@@ -19,6 +19,8 @@ if __name__ == '__main__':
         C = torch.matmul(A, B)
     endTime1 = time.time()
 
+    print(f"try_gpu():{try_gpu()}")
+
     startTime2 = time.time()
     for i in range(100):
         A = torch.ones(500, 500, device=try_gpu())
