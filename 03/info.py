@@ -17,3 +17,12 @@ if __name__== '__main__':
     # print("Current Device: ", torch.cuda.current_device())
 
     print("Number of CPUs: ", os.cpu_count())
+
+    print("CUDA Available: ", torch.cuda.is_available())
+    print("Number of GPUs: ", torch.cuda.device_count())
+    print("Current device: ", torch.cuda.current_device())
+    print("Device Name: ", torch.cuda.get_device_name(0))
+
+    if torch.cuda.is_available():
+        print("Memory Allocated: ", torch.cuda.memory_allocated())
+        print("Memory Cached: ", torch.cuda.memory_reserved())
