@@ -3,3 +3,7 @@
 /workspace.xml
 *.iml
 *.xml
+model/
+dataset/
+csv_to_vcard/
+.vscode/
