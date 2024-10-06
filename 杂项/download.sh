@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# 从huggingface下载模型和数据集的脚步
+# 使用方法：
+# 下载模型：bash download.sh -m model_name
+# 下载数据集：bash download.sh -d dataset_name
+# 下载模型和数据集：bash download.sh -m model_name -d dataset_name
+
+
 # Initialize our own variables
 model_name=""
 dataset_name=""
